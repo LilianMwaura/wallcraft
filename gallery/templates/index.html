@@ -1,6 +1,7 @@
 {%extends 'base.html'%}
 { %load%}
 
+{%block content%}
 <div class="container-fluid home-page">
  <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12 text-center welcome-section">
@@ -10,8 +11,8 @@
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 text-center bgphoto-section">
         <!-- background photo -->
-        <img src="{}" alt="bgphoto" class="img-responsive">
+        <img src="{%static /grudge1.jpg%}" alt="bgphoto" class="img-responsive bgphoto">
 
     </div>    
-
+ </div>
 </div>
