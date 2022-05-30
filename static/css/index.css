@@ -1,6 +1,6 @@
 .intro-section {
     padding: 5%;
-    background: linear-gradient(90deg, white 50%, #1f1f1f, 50%);
+    background: linear-gradient(90deg, white 50%, #1f1f1f 50%);
     height: 100vh;
     
 }
@@ -9,13 +9,13 @@
 }
 
 p {
-    font-family: 'Inter';
+    font-family: 'Marcellus SC', serif;
     color: #423F3E;
     font-size: smaller;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Slab';
+    font-family: 'Marcellus SC', serif;
     
 }
 
@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 .search-btn:hover {
     background-color: #fff;
     color: black;
-    border: 1px solid #082032;
+    border: 1px solid #1f1f1f;
     transition: 250ms;
 }
 

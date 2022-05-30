@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from django.http  import HttpResponse
+from .models import Image, Location
 from django.core.exceptions import ObjectDoesNotExist
 from django.http import Http404
-from .models import Image, Location
+
 
 # Create your views here.
 def index(request):
