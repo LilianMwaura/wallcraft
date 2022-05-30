@@ -1,6 +1,6 @@
 .intro-section {
     padding: 5%;
-    background: linear-gradient(90deg, white 50%, #082032 50%);
+    background: linear-gradient(90deg, white 50%, #1f1f1f, 50%);
     height: 100vh;
     
 }
@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar {
-    background-color: #082032;  
+    background-color: #1f1f1f;  
     color: white;
 }
 
