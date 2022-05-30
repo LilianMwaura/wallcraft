@@ -115,4 +115,30 @@ h1, h2, h3, h4, h5, h6 {
     
 } */
 
-.
+.btn-modal {
+    background-color: #082032;
+    width: 25%;
+    color: white;
+    font-size: smaller;
+    margin: 2%;
+}
+
+.btn-modal:hover{
+    background-color: white;
+    color: #082032;
+    border: 1px solid #082032;
+    transition: 250ms;
+}
+
+.modal {
+    width: 150%;
+}
+.location-text {
+    color: black;
+}
+
+.copy-space {
+    font-size: small;
+    width: 80%;
+    margin: 1% auto;
+}
