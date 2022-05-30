@@ -42,7 +42,7 @@
     </div>
     <!-- Displaying submitted gallerys -->
     <div class="row">
-        {% for gallery_item in media %}
+        {% for gallery_item in images %}
         <div class="col-lg-4 col-md-6 col-sm-12 text-center display-area">
             {% if gallery_item.image %}
             <a href="" data-toggle="modal" data-target="#myModal{{ gallery_item.id }}"><img
@@ -63,7 +63,7 @@
                     </div>
                     <div class="modal-body p-2">
                         <img src="{{gallery_item.image.url}}" style="width:auto; max-height:300px">
-                        <p class="p-2">This photo was taken in <strong>{{gallery_item.location}}.</strong></p>
+                        <p class="p-2">Location:<strong>{{gallery_item.location}}.</strong></p>
                         <p>{{gallery_item.description}}</p>
                     </div>
                     <footer>
