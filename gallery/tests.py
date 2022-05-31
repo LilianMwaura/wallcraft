@@ -26,6 +26,3 @@ class categoriesTestClass(TestCase):
         categorie = categories.objects.all()
         self.assertTrue(len(categorie)>0)    
 
-
-    
-     
