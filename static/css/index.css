@@ -37,7 +37,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .admin{
     text-decoration: none;
-    padding-top: 1px;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .bg1 {
     object-fit: cover;
