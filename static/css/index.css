@@ -1,6 +1,6 @@
 .intro-section {
     padding: 5%;
-    background: linear-gradient(90deg, white 50%, #1f1f1f 50%);
+    background: linear-gradient(90deg, white 50%, rgb(5, 5, 5) 50%);
     height: 100vh;
     
 }
@@ -34,6 +34,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #082032;
     border: 1px solid #082032;
     transition: 250ms;
+}
+.admin{
+    text-decoration: none;
+    padding-top: 1px;
 }
 .bg1 {
     object-fit: cover;
