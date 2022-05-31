@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 } */
 
 .btn-modal {
-    background-color: #082032;
+    background-color: #1f1f1f;
     width: 25%;
     color: white;
     font-size: smaller;
@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-modal:hover{
     background-color: white;
     color: #082032;
-    border: 1px solid #082032;
+    border: 1px solid #1f1f1f;
     transition: 250ms;
 }
 
