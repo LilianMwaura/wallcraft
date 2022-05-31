@@ -14,6 +14,9 @@
             <li class="nav-item active">
                 <a class="nav-link nav-text" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item active">
+            <span class="mdi mdi-account-circle-outline"><a href="/admin">Admin</a></span>
+            </li>
             <li>
                 <a class="btn btn-primary dropdown-toggle location-toggle mr-4" type="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">View Images By Location</a>
@@ -40,39 +43,39 @@
         <p>"You've always had the power, <br>you just had to learn it by yourself." <br><strong>Dee Philips</strong>
         </p>
     </div>
-    <!-- Displaying submitted gallerys -->
+    <!-- Displaying submitted pictures -->
     <div class="row">
-        {% for gallery_item in images %}
+        {% for picture_item in images %}
         <div class="col-lg-4 col-md-6 col-sm-12 text-center display-area">
-            {% if gallery_item.image %}
-            <a href="" data-toggle="modal" data-target="#myModal{{ gallery_item.id }}"><img
-                    src="{{gallery_item.image.url}}" class="uploaded-pics" alt="Image"> </a>
+            {% if picture_item.image %}
+            <a href="" data-toggle="modal" data-target="#myModal{{ picture_item.id }}"><img
+                    src="{{picture_item.image.url}}" class="uploaded-pics" alt="Image"> </a>
             {% else %}
             <p>No Image</p>
             {% endif %}
         </div>
 
         <!-- Image modal     -->
-        <div id="myModal{{gallery_item.id}}" class="modal fade" role="dialog" style="color:000">
+        <div id="myModal{{picture_item.id}}" class="modal fade" role="dialog" style="color:000">
             <div class="modal-dialog">
                 <div class="modal-content mbody w3-black">
                     <div class="modal-header">
                         <strong>
-                            <p class="p-2"> {{gallery_item.name}}</p>
+                            <p class="p-2"> {{picture_item.name}}</p>
                         </strong>
                     </div>
                     <div class="modal-body p-2">
-                        <img src="{{gallery_item.image.url}}" style="width:auto; max-height:300px">
-                        <p class="p-2">Location:<strong>{{gallery_item.location}}.</strong></p>
-                        <p>{{gallery_item.description}}</p>
+                        <img src="{{picture_item.image.url}}" style="width:auto; max-height:300px">
+                        <p class="p-2"> Location: <strong>{{picture_item.location}}.</strong></p>
+                        <p>{{picture_item.description}}</p>
                     </div>
                     <footer>
                         <button id="copy-text-btn" class="btn copy-btn btn-modal"
-                            onclick="copyLink('{{gallery_item.id}}.url')">Copy Image Link</button>
+                            onclick="copyLink('{{picture_item.id}}.url')">Copy Image Link</button>
                         <button type="button" class="btn btn-modal" data-dismiss="modal">Close</button>
 
-                        <input class="form-control copy-space input-lg text-center" type="text" value="{{gallery_item.image.url}}"
-                            id="{{gallery_item.id}}.url">
+                        <input class="form-control copy-space input-lg text-center" type="text" value="{{picture_item.image.url}}"
+                            id="{{picture_item.id}}.url">
 
                     </footer>
                 </div>
